@@ -144,7 +144,7 @@ img { display: block; width: 100%; }
 
 /* ── ARTICLE LIST ── */
 .article-list { display: flex; flex-direction: column; }
-.article-list-item { display: grid; grid-template-columns: 1fr 120px; gap: 24px; align-items: start; padding: 26px 0; border-bottom: 1px solid var(--rule); transition: padding-left .18s; }
+.article-list-item { display: grid; grid-template-columns: 132px 1fr 120px; gap: 24px; align-items: start; padding: 26px 0; border-bottom: 1px solid var(--rule); transition: padding-left .18s; }
 .article-list-item:hover { padding-left: 8px; }
 .article-list-item:hover .ali-title { color: var(--accent); }
 .ali-cat { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
@@ -182,7 +182,10 @@ img { display: block; width: 100%; }
   .container { padding: 0 18px; }
   .article-title { font-size: 1.7rem; }
   }
-</style>
+
+    .ali-art img{height:92px;object-fit:cover;border:1px solid var(--rule)}
+    @media (max-width:960px){.ali-art{display:none}}
+  </style>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -208,8 +211,8 @@ img { display: block; width: 100%; }
     <h1 class="section-page-title">Society</h1>
     <p class="section-page-desc">Saudi social developments, culture, labor, and quality of life coverage.</p>
   </div>
-  <div class="article-list"><a href="robotic-surgery.html" style="text-decoration:none;display:block"><div class="article-list-item"><div><div class="ali-cat">Society · Health</div><div class="ali-title">Saudi Arabia Completes Its First Remote Robotic Surgery, Riyadh to Jeddah</div><p class="ali-deck">A Riyadh team operated on a patient in Jeddah through a robotic platform.</p><div class="ali-meta">19 Jul 2026</div></div><div class="ali-date">19 Jul 2026</div></div></a><a href="internet-report.html" style="text-decoration:none;display:block"><div class="article-list-item"><div><div class="ali-cat">Society · Technology</div><div class="ali-title">AI Adoption Reaches 45.2 Percent Among Saudi Internet Users</div><p class="ali-deck">Also among the top five G20 countries for median mobile download speed.</p><div class="ali-meta">19 Jul 2026</div></div><div class="ali-date">19 Jul 2026</div></div></a><a href="world-cup-exit.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+  <div class="article-list"><a href="robotic-surgery.html" style="text-decoration:none;display:block"><div class="article-list-item"><div class="ali-art"><img src="art/health.svg" alt=""/></div><div><div class="ali-cat">Society · Health</div><div class="ali-title">Saudi Arabia Completes Its First Remote Robotic Surgery, Riyadh to Jeddah</div><p class="ali-deck">A Riyadh team operated on a patient in Jeddah through a robotic platform.</p><div class="ali-meta">19 Jul 2026</div></div><div class="ali-date">19 Jul 2026</div></div></a><a href="internet-report.html" style="text-decoration:none;display:block"><div class="article-list-item"><div class="ali-art"><img src="art/tech.svg" alt=""/></div><div><div class="ali-cat">Society · Technology</div><div class="ali-title">AI Adoption Reaches 45.2 Percent Among Saudi Internet Users</div><p class="ali-deck">Also among the top five G20 countries for median mobile download speed.</p><div class="ali-meta">19 Jul 2026</div></div><div class="ali-date">19 Jul 2026</div></div></a><a href="world-cup-exit.html" style="text-decoration:none;display:block">
+      <div class="article-list-item"><div class="ali-art"><img src="art/sports.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Sport</div>
           <div class="ali-title">Saudi Arabia Exits the World Cup with Two Points and a 2034 Runway</div>
@@ -219,7 +222,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">18 Jul 2026</div>
       </div>
     </a><a href="esports-world-cup.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/sports.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Riyadh</div>
           <div class="ali-title">Saudi Clubs Defend Their Title as the Esports World Cup Runs in Riyadh</div>
@@ -229,7 +232,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">18 Jul 2026</div>
       </div>
     </a><a href="health-forum-2026.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/health.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Health</div>
           <div class="ali-title">Saudi Arabia Convenes Third Health Care Model Forum in Riyadh</div>
@@ -239,7 +242,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">17 Jul 2026</div>
       </div>
     </a><a href="youth-football-pipeline.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/sports.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Sport</div>
           <div class="ali-title">Saudi Football Is Building from Age Five Up</div>
@@ -249,7 +252,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">17 Jul 2026</div>
       </div>
     </a><a href="environment-week-2026.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/environment.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Environment</div>
           <div class="ali-title">Saudi Arabia Ran the Numbers on Its Own Environmental Policy. It Published Them Anyway.</div>
@@ -259,7 +262,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">16 Jul 2026</div>
       </div>
     </a><a href="riyadh-dust-fines.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/environment.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Environment</div>
           <div class="ali-title">Riyadh Fined Construction Sites $4.3 Million for Dust. That Is the Interesting Part.</div>
@@ -270,7 +273,7 @@ img { display: block; width: 100%; }
       </div>
     </a>
     <a href="diriyah-museum.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/culture.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Culture · Diriyah</div>
           <div class="ali-title">Diriyah Company Awards $490 Million Contract to Build Saudi Arabia Museum of Contemporary Art</div>
@@ -280,7 +283,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">13 Jun 2026</div>
       </div>
     </a><a href="interior-overstay.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/security.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Ministry of Interior</div>
           <div class="ali-title">Ministry of Interior Issues Formal Warning on Visa Overstay Penalties</div>
@@ -290,7 +293,7 @@ img { display: block; width: 100%; }
         <div class="ali-date">13 Jul 2026</div>
       </div>
     </a><a href="labor-market.html" style="text-decoration:none;display:block">
-      <div class="article-list-item">
+      <div class="article-list-item"><div class="ali-art"><img src="art/labor.svg" alt=""/></div>
         <div>
           <div class="ali-cat">Society · Labor</div>
           <div class="ali-title">World Bank Names Saudi Arabia a Development Knowledge Model as Unemployment Reaches Historic 2.8 Percent Low</div>
