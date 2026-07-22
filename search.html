@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Search | KingdomWire</title>
+  <meta name="description" content="Search all KingdomWire coverage of Saudi Arabia."/>
+  <meta property="og:title" content="Search | KingdomWire"/>
+  <meta property="og:description" content="Search all KingdomWire coverage of Saudi Arabia."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://kingdomwire.net/search.html"/>
+  <meta property="og:site_name" content="KingdomWire"/>
+  <meta property="og:image" content="https://kingdomwire.net/og/search.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://kingdomwire.net/og/search.png"/>
+  <meta name="twitter:site" content="@KingdomWire"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://kingdomwire.net/search.html"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+/* ============================================
+   KINGDOMWIRE - GLOBAL STYLESHEET v2
+   White · Ink · Saudi Lavender #6B4E9B
+   ============================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:   #0B0B0D;
+  --ink:     #1A1A1C;
+  --dg:      #333336;
+  --mg:      #6E6E73;
+  --lg:      #A8A8AD;
+  --rule:    #E4E4E7;
+  --ow:      #F8F8F7;
+  --white:   #FFFFFF;
+  --accent:  #6B4E9B;
+  --accent2: #573D82;
+  --accent-soft: #F1EDF7;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+body { background: var(--white); color: var(--ink); font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; }
+::selection { background: var(--accent); color: var(--white); }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+.container-narrow { max-width: 760px; margin: 0 auto; padding: 0 28px; }
+
+/* ── TICKER ── */
+.ticker { background: var(--black); color: #9d9da3; font-family: 'JetBrains Mono', monospace; font-size: .66rem; letter-spacing: .05em; overflow: hidden; white-space: nowrap; display: flex; align-items: center; height: 34px; }
+.ticker-label { background: var(--accent); color: var(--white); font-weight: 700; padding: 0 16px; height: 100%; display: flex; align-items: center; flex-shrink: 0; letter-spacing: .14em; font-size: .6rem; text-transform: uppercase; }
+.ticker-track { display: inline-flex; animation: tick 70s linear infinite; padding-left: 40px; }
+.ticker-track span { padding-right: 72px; }
+.ticker-track span::before { content: '◆ '; color: var(--accent); font-size: .5rem; vertical-align: 1px; padding-right: 8px; }
+@keyframes tick { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* ── MASTHEAD ── */
+.masthead { background: var(--white); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--rule); box-shadow: 0 1px 0 var(--white), 0 4px 16px rgba(11,11,13,.05); }
+.masthead-inner { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+.masthead-top { position: relative; display: flex; align-items: center; justify-content: center; padding: 28px 0 22px; }
+.masthead-top::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; border-top: 1px solid var(--black); border-bottom: 1px solid var(--black); }
+.logo { text-align: center; }
+.logo-wordmark { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900; letter-spacing: -.015em; color: var(--black); line-height: 1; }
+.logo-wordmark a { color: inherit; }
+.logo-dot { color: var(--accent); }
+.logo-rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 10px; }
+.logo-rule-line { flex: 1; max-width: 76px; height: 1px; background: linear-gradient(to right, transparent, var(--accent)); }
+.logo-rule-line:last-child { background: linear-gradient(to left, transparent, var(--accent)); }
+.logo-tagline { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .3em; color: var(--mg); text-transform: uppercase; white-space: nowrap; }
+.masthead-right { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+/* ── NAV ── */
+.nav { overflow-x: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+.nav-inner { display: flex; align-items: center; width: max-content; margin: 0 auto; padding: 0 16px; }
+.nav-inner a { font-family: 'Inter', sans-serif; font-size: .68rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; color: var(--mg); padding: 14px 18px; white-space: nowrap; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; display: block; }
+.nav-inner a:hover { color: var(--black); }
+.nav-inner a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ── TAGS ── */
+.tag { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .1em; text-transform: uppercase; padding: 3px 9px; border: 1px solid var(--rule); color: var(--mg); background: var(--ow); }
+.tag-accent { background: var(--accent); color: var(--white); border-color: var(--accent); }
+.tag-breaking { background: #B71C1C; color: var(--white); border-color: #B71C1C; }
+
+/* ── SECTION HEAD ── */
+.section-head { display: flex; align-items: center; gap: 14px; padding: 30px 0 0; border-top: 2px solid var(--accent); margin-top: 48px; position: relative; }
+.section-head::before { content: ''; position: absolute; top: -2px; left: 0; width: 56px; height: 2px; background: var(--black); }
+.section-head-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--black); white-space: nowrap; }
+.section-head-title a { color: inherit; }
+.section-head-title a:hover { color: var(--accent); }
+.section-head-line { flex: 1; height: 1px; background: var(--rule); }
+.section-head-link { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.section-head-link:hover { color: var(--accent2); }
+
+.card-date { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--lg); margin-top: 12px; }
+
+/* ── INFOGRAPHIC ── */
+.infographic { border: 1px solid var(--rule); border-top: 2px solid var(--accent); background: var(--ow); padding: 18px; margin-top: 18px; }
+.infographic-title { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mg); margin-bottom: 12px; }
+.bar-chart { display: flex; flex-direction: column; gap: 7px; }
+.bar-row { display: flex; align-items: center; gap: 8px; }
+.bar-label { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--dg); width: 110px; flex-shrink: 0; text-align: right; line-height: 1.3; }
+.bar-track { flex: 1; height: 10px; background: var(--rule); }
+.bar-fill { height: 100%; background: var(--dg); }
+.bar-fill.accent { background: var(--accent); }
+.bar-value { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--dg); width: 54px; flex-shrink: 0; }
+.stat-row { display: flex; border-top: 1px solid var(--rule); padding-top: 12px; margin-top: 12px; }
+.stat-block { flex: 1; text-align: center; border-right: 1px solid var(--rule); padding: 0 8px; }
+.stat-block:last-child { border-right: none; }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--accent); line-height: 1; }
+.stat-label { font-family: 'JetBrains Mono', monospace; font-size: .5rem; color: var(--mg); letter-spacing: .06em; margin-top: 4px; text-transform: uppercase; }
+
+/* ── FOOTER ── */
+.site-footer { background: var(--black); color: var(--white); padding: 60px 0 30px; margin-top: 76px; border-top: 3px solid var(--accent); }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 44px; padding-bottom: 40px; border-bottom: 1px solid #17171a; }
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 900; color: var(--white); margin-bottom: 14px; }
+.footer-logo .logo-dot { color: var(--accent); }
+.footer-desc { font-size: .78rem; line-height: 1.75; color: #5c5c62; font-weight: 300; }
+.footer-col-title { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; color: #47474d; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #17171a; }
+.footer-col a { display: block; font-size: .8rem; color: #5c5c62; margin-bottom: 10px; transition: color .15s, padding-left .15s; }
+.footer-col a:hover { color: var(--white); padding-left: 4px; }
+.footer-bottom { padding-top: 24px; display: flex; align-items: center; justify-content: space-between; }
+.footer-copy { font-family: 'JetBrains Mono', monospace; font-size: .56rem; color: #3a3a40; letter-spacing: .08em; }
+
+/* ── ARTICLE PAGE ── */
+.article-header { padding: 44px 0 32px; border-bottom: 1px solid var(--rule); margin-bottom: 36px; }
+.article-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+.article-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; line-height: 1.16; color: var(--black); margin-bottom: 20px; }
+.article-deck { font-size: 1.08rem; line-height: 1.72; color: var(--dg); font-weight: 300; margin-bottom: 22px; border-left: 3px solid var(--accent); padding-left: 18px; }
+.article-meta { display: flex; align-items: center; gap: 14px; font-family: 'JetBrains Mono', monospace; font-size: .58rem; color: var(--lg); flex-wrap: wrap; }
+.article-body { font-size: 1rem; line-height: 1.88; color: var(--ink); }
+.article-body p { margin-bottom: 1.5em; }
+.article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700; color: var(--black); margin: 2em 0 .8em; padding-top: .6em; border-top: 1px solid var(--rule); }
+.article-body blockquote { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 18px 22px; margin: 2em 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.08rem; color: var(--dg); line-height: 1.65; }
+.article-source { font-family: 'JetBrains Mono', monospace; font-size: .6rem; color: var(--mg); margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); }
+
+/* ── SECTION PAGE ── */
+.section-page-header { padding: 40px 0 26px; border-bottom: 2px solid var(--accent); margin-bottom: 32px; position: relative; }
+.section-page-header::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 56px; height: 2px; background: var(--black); }
+.section-page-title { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: var(--black); }
+.section-page-desc { font-size: .9rem; color: var(--mg); margin-top: 8px; font-weight: 300; }
+
+/* ── ARTICLE LIST ── */
+.article-list { display: flex; flex-direction: column; }
+.article-list-item { display: grid; grid-template-columns: 1fr 120px; gap: 24px; align-items: start; padding: 26px 0; border-bottom: 1px solid var(--rule); transition: padding-left .18s; }
+.article-list-item:hover { padding-left: 8px; }
+.article-list-item:hover .ali-title { color: var(--accent); }
+.ali-cat { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.ali-title { font-family: 'Playfair Display', serif; font-size: 1.18rem; font-weight: 700; line-height: 1.3; color: var(--black); margin-bottom: 8px; transition: color .15s; }
+.ali-deck { font-size: .82rem; line-height: 1.65; color: var(--mg); font-weight: 300; }
+.ali-meta { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--lg); margin-top: 10px; }
+.ali-date { font-family: 'JetBrains Mono', monospace; font-size: .6rem; color: var(--lg); text-align: right; padding-top: 4px; white-space: nowrap; }
+
+/* ── ABOUT ── */
+.about-hero { padding: 60px 0; border-bottom: 1px solid var(--rule); }
+.about-title { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; line-height: 1.2; color: var(--black); margin-bottom: 22px; }
+.about-body { font-size: 1rem; line-height: 1.85; color: var(--dg); }
+.about-body p { margin-bottom: 1.4em; }
+.about-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.about-value { padding: 26px; border: 1px solid var(--rule); border-top: 2px solid var(--accent); }
+.about-value-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--black); margin-bottom: 10px; }
+.about-value-body { font-size: .82rem; line-height: 1.7; color: var(--mg); font-weight: 300; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .logo-wordmark { font-size: 2.4rem; }
+  .masthead-top { padding: 20px 0 16px; }
+  .masthead-right { position: static; transform: none; margin-top: 14px; }
+  .masthead-top { flex-direction: column; }
+  .about-values { grid-template-columns: 1fr; }
+  .article-list-item { grid-template-columns: 1fr; }
+  .ali-date { text-align: left; }
+  .article-title { font-size: 1.9rem; }
+}
+@media (max-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .logo-wordmark { font-size: 2rem; }
+  .container { padding: 0 18px; }
+  .article-title { font-size: 1.7rem; }
+  }
+    .search-box{display:flex;margin:8px 0 32px}
+    .search-input{flex:1;padding:16px 18px;border:1.5px solid var(--rule);border-right:none;font-family:"Inter",sans-serif;font-size:1rem;color:var(--ink);outline:none}
+    .search-input:focus{border-color:var(--accent)}
+    .search-btn{padding:16px 26px;background:var(--accent);color:var(--white);border:1.5px solid var(--accent);font-family:"Inter",sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+    .search-result{display:grid;grid-template-columns:1fr 96px;gap:20px;padding:20px 0;border-bottom:1px solid var(--rule);align-items:baseline;transition:padding-left .18s}
+    .search-result:hover{padding-left:6px}
+    .search-result:hover .sr-title{color:var(--accent)}
+    .sr-cat{font-family:"JetBrains Mono",monospace;font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+    .sr-title{font-family:"Playfair Display",serif;font-size:1.1rem;font-weight:600;line-height:1.35;color:var(--black);transition:color .15s}
+    .sr-date{font-family:"JetBrains Mono",monospace;font-size:.6rem;color:var(--lg);text-align:right;white-space:nowrap}
+    .search-count{font-family:"JetBrains Mono",monospace;font-size:.6rem;color:var(--mg);margin-bottom:12px;letter-spacing:.06em}
+    @media(max-width:600px){.search-result{grid-template-columns:1fr}.sr-date{text-align:left}}
+  </style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <div class="logo">
+        <div class="logo-wordmark"><a href="index.html">KingdomWire<span class="logo-dot">.</span></a></div>
+        <div class="logo-rule"><div class="logo-rule-line"></div><div class="logo-tagline">Saudi Arabia · In Depth · In English</div><div class="logo-rule-line"></div></div>
+      </div>
+      </div>
+    <nav class="nav"><div class="nav-inner"><a href="index.html">Latest</a><a href="policy.html">Policy</a><a href="economy.html">Economy</a><a href="society.html">Society</a><a href="on-the-record.html">On the Record</a><a href="analysis.html">Analysis</a><a href="archive.html">Archive</a><a href="about.html">About</a><a href="search.html" class="active">Search</a></div></nav>
+  </div>
+</header>
+<main>
+<div class="container" style="padding-top:8px;padding-bottom:60px;min-height:60vh">
+  <div class="section-page-header">
+    <h1 class="section-page-title">Search</h1>
+    <p class="section-page-desc">Search all KingdomWire coverage.</p>
+  </div>
+  <div class="search-box">
+    <input type="text" id="q" class="search-input" placeholder="Search stories, topics, entities..." autofocus/>
+    <button class="search-btn" onclick="run()">Search</button>
+  </div>
+  <div class="search-count" id="count"></div>
+  <div id="results"></div>
+</div>
+</main>
+<script>
+var IDX = [{"t": "The Houthis Declare a Naval Blockade of Saudi Arabia. Capability Is the Open Question.", "u": "houthi-blockade.html", "c": "Policy \u00b7 Maritime Security", "dd": "20 Jul 2026", "k": "houthi blockade naval red sea bab el-mandeb yanbu shipping insurance"}, {"t": "Foreign Minister Discusses Gaza with the Palestinian Vice President", "u": "fm-gaza-talks.html", "c": "Policy \u00b7 Diplomacy", "dd": "20 Jul 2026", "k": "gaza palestinian vice president faisal farhan humanitarian diplomacy"}, {"t": "Riyadh Air Adds 34 Boeing and Airbus Aircraft to Its Fleet Plan", "u": "riyadh-air-fleet.html", "c": "Economy \u00b7 Aviation", "dd": "20 Jul 2026", "k": "riyadh air fleet boeing airbus aircraft aviation 34 order"}, {"t": "Saudi Arabia Opens National Parks to Private Investment", "u": "national-parks-investment.html", "c": "Economy \u00b7 Tourism", "dd": "20 Jul 2026", "k": "national parks investment eco-tourism conservation private capital"}, {"t": "Sirens in Al-Kharj and Yanbu: The Warning System Worked, and the Targets Tell a Story", "u": "security-alerts.html", "c": "Policy \u00b7 Security", "dd": "19 Jul 2026", "k": "sirens alert kharj yanbu early warning missiles iran drones all-clear"}, {"t": "Read the Royal Orders Next to the Nuclear File", "u": "analysis-nuclear-file.html", "c": "Analysis \u00b7 Geopolitics", "dd": "19 Jul 2026", "k": "nuclear uranium enrichment 123 agreement trump royal orders abdulaziz energy"}, {"t": "Saudi Arabia Completes Its First Remote Robotic Surgery, Riyadh to Jeddah", "u": "robotic-surgery.html", "c": "Society \u00b7 Health", "dd": "19 Jul 2026", "k": "remote robotic surgery riyadh jeddah king abdulaziz medical city health"}, {"t": "Foreign Investors Direct $1.6 Billion into Saudi Stocks", "u": "foreign-inflows.html", "c": "Economy \u00b7 Markets", "dd": "19 Jul 2026", "k": "foreign investors tadawul stocks inflows gcc buying 10716"}, {"t": "Saudi Real Estate Transactions Reach SR1.6 Trillion in Three Years", "u": "real-estate-transactions.html", "c": "Economy \u00b7 Real Estate", "dd": "19 Jul 2026", "k": "real estate transactions brokerage law brokers contracts trillion"}, {"t": "First National Homeownership Readiness Index Announced", "u": "homeownership-index.html", "c": "Economy \u00b7 Housing", "dd": "19 Jul 2026", "k": "homeownership readiness index redf housing financing down payment"}, {"t": "AI Adoption Reaches 45.2 Percent Among Saudi Internet Users", "u": "internet-report.html", "c": "Society \u00b7 Technology", "dd": "19 Jul 2026", "k": "ai adoption internet saudi report mobile speed 216 mbps g20"}, {"t": "Intercept, Condemn, Mediate: The Saudi Posture Holding Since Spring", "u": "security-pattern.html", "c": "Policy \u00b7 Security", "dd": "18 Jul 2026", "k": "security houthi missiles intercepted condemnation iran mediation ras tanura defense"}, {"t": "Saudi Arabia Exits the World Cup with Two Points and a 2034 Runway", "u": "world-cup-exit.html", "c": "Society \u00b7 Sport", "dd": "18 Jul 2026", "k": "world cup exit uruguay spain cabo verde argentina final 2034 football"}, {"t": "Saudi Clubs Defend Their Title as the Esports World Cup Runs in Riyadh", "u": "esports-world-cup.html", "c": "Society \u00b7 Riyadh", "dd": "18 Jul 2026", "k": "esports world cup riyadh gaming clubs title falcons industry"}, {"t": "Saudi Arabia Welcomes Regular Commercial Flights Between Amman and Sanaa", "u": "amman-sanaa-flights.html", "c": "Policy \u00b7 Diplomacy", "dd": "18 Jul 2026", "k": "amman sanaa flights jordan yemen humanitarian aviation"}, {"t": "How Much of DCO\u0027s Work Changes Policy?", "u": "analysis-dco-implementation.html", "c": "Analysis \u00b7 Technology", "dd": "18 Jul 2026", "k": "dco digital cooperation organization ai ethics guidebook sdaia governance implementation"}, {"t": "Fitch Affirms Saudi Arabia at A+ as War Slows Growth Forecast to 0.6 Percent", "u": "fitch-a-plus.html", "c": "Economy \u00b7 Ratings", "dd": "17 Jul 2026", "k": "fitch rating a+ credit sovereign debt banks hormuz economy"}, {"t": "Saudi Arabia Joins Qatar-Iran Call on De-escalation as Crown Prince Discusses Maritime Security with Trump", "u": "fm-trilateral-mediation.html", "c": "Policy \u00b7 Diplomacy", "dd": "17 Jul 2026", "k": "diplomacy qatar iran araghchi trump mediation maritime faisal farhan"}, {"t": "Saudi Arabia Convenes Third Health Care Model Forum in Riyadh", "u": "health-forum-2026.html", "c": "Society \u00b7 Health", "dd": "17 Jul 2026", "k": "health care model forum minister clusters hospitals vision 2030"}, {"t": "Diriyah Closes Future Arts Camp 2026 with Eighteen Student Projects", "u": "diriyah-future-arts.html", "c": "Culture", "dd": "17 Jul 2026", "k": "diriyah future arts camp culture museum creative projects"}, {"t": "Saudi Football Is Building from Age Five Up", "u": "youth-football-pipeline.html", "c": "Society \u00b7 Sport", "dd": "17 Jul 2026", "k": "football soccer youth under-5 under-7 under-9 girls world cup 2034"}, {"t": "What a Credit Rating Measures During a War", "u": "analysis-rating-verdict.html", "c": "Analysis \u00b7 Economy", "dd": "17 Jul 2026", "k": "analysis fitch rating verdict resilience credit a+"}, {"t": "Saudi Arabia Ran the Numbers on Its Own Environmental Policy. It Published Them Anyway.", "u": "environment-week-2026.html", "c": "Society \u00b7 Environment", "dd": "16 Jul 2026", "k": "environment week wildlife ncw permits inspections air quality biodiversity"}, {"t": "Deutsche Bank Sets Up Middle East Headquarters in Riyadh", "u": "deutsche-bank-riyadh.html", "c": "Economy \u00b7 Banking", "dd": "16 Jul 2026", "k": "deutsche bank riyadh headquarters license jpmorgan goldman morgan stanley"}, {"t": "Riyadh Fined Construction Sites $4.3 Million for Dust. That Is the Interesting Part.", "u": "riyadh-dust-fines.html", "c": "Society \u00b7 Environment", "dd": "16 Jul 2026", "k": "riyadh dust fines environment construction air quality enforcement"}, {"t": "The Riyadh Headquarters Race Is About Who Blinks First", "u": "analysis-rhq-race.html", "c": "Analysis \u00b7 Banking", "dd": "16 Jul 2026", "k": "analysis riyadh headquarters banks deutsche coordination strategy"}, {"t": "The Geography of Influence Has Shifted Toward Riyadh", "u": "analysis-diplomacy-hub.html", "c": "Analysis \u00b7 Diplomacy", "dd": "15 Jul 2026", "k": "analysis diplomacy riyadh hub mediation ukraine qatar calls geopolitics"}, {"t": "Saudia Begins 15 New Weekly Flights to Red Sea Destinations as Coastal Resorts Report Record Occupancy", "u": "saudia-red-sea-flights.html", "c": "Economy \u00b7 Tourism", "dd": "15 Jul 2026", "k": "saudia red sea flights tourism occupancy resorts airport luxury"}, {"t": "Future Investment Initiative Marks Its Tenth Edition in Riyadh This October", "u": "fii10-riyadh.html", "c": "Economy \u00b7 Investment", "dd": "15 Jul 2026", "k": "fii future investment initiative riyadh conference capital pif"}, {"t": "Saudi Business Registrations Approach Two Million as Private Sector Growth Extends Through Second Quarter", "u": "q2-business-registrations.html", "c": "Economy \u00b7 Private Sector", "dd": "15 Jul 2026", "k": "business registrations commercial private sector q2 growth vision 2030"}, {"t": "Saudi Foreign Minister Holds Calls with Ukrainian Counterpart as Crown Prince Speaks with Emir of Qatar", "u": "fm-diplomacy.html", "c": "Policy \u00b7 Diplomacy", "dd": "15 Jul 2026", "k": "foreign minister faisal farhan ukraine sybiha qatar tamim diplomacy calls"}, {"t": "Saudi Arabia's Tourism Strategy Is Being Tested. The First Results Matter.", "u": "analysis-red-sea-model.html", "c": "Analysis \u00b7 Tourism", "dd": "15 Jul 2026", "k": "analysis red sea tourism infrastructure occupancy model maldives"}, {"t": "Saudi Cabinet Issues Formal Condemnation of Iranian Attacks on Gulf States and Hormuz Shipping", "u": "saudi-cabinet-condemns-iran.html", "c": "Policy \u00b7 Security", "dd": "14 Jul 2026", "k": "cabinet iran condemnation gulf hormuz security council ministers iraq"}, {"t": "PIF Enters New Phase with 2026-2030 Strategy as Private Sector Takes Center Stage", "u": "pif-strategy-2026.html", "c": "Economy \u00b7 Investment", "dd": "14 Jul 2026", "k": "pif public investment fund strategy portfolio rumayyan neom private sector"}, {"t": "What Survives the PIF Recalibration: Diriyah and Qiddiya Press Forward as NEOM Resets Around Oxagon", "u": "giga-projects-update.html", "c": "Economy \u00b7 Giga Projects", "dd": "14 Jul 2026", "k": "giga projects diriyah qiddiya neom oxagon line world cup"}, {"t": "Cabinet Approves Updated State Revenue Governance System", "u": "revenue-governance.html", "c": "Policy \u00b7 Fiscal", "dd": "14 Jul 2026", "k": "revenue governance fiscal jadaan finance budget cabinet"}, {"t": "Saudi Data and AI Authority Launches National AI Risk Management Framework", "u": "sdaia-ai-framework.html", "c": "Policy \u00b7 Technology", "dd": "14 Jul 2026", "k": "sdaia ai artificial intelligence framework risk governance technology"}, {"t": "World Bank Names Saudi Arabia a Development Knowledge Model as Unemployment Reaches Historic 2.8 Percent Low", "u": "labor-market.html", "c": "Society \u00b7 Labor", "dd": "14 Jul 2026", "k": "labor market unemployment world bank knowledge hub employment private sector"}, {"t": "Saudi Arabia Is Not Reacting to Iran. It Is Managing It. Those Are Not the Same Thing.", "u": "analysis-gulf-security.html", "c": "Analysis \u00b7 Geopolitics", "dd": "14 Jul 2026", "k": "analysis iran gulf security management escalation washington"}, {"t": "PIF's Pivot to Private Sector Is the Right Move. Whether Private Capital Is Ready for It Is a Different Question.", "u": "analysis-pif-pivot.html", "c": "Analysis \u00b7 Investment", "dd": "14 Jul 2026", "k": "analysis pif pivot private capital sequencing contracts"}, {"t": "Saudi Arabia's AI Governance Framework Arrives Before the Problems Do. Most Countries Cannot Say That.", "u": "analysis-ai-governance.html", "c": "Analysis \u00b7 Technology", "dd": "14 Jul 2026", "k": "analysis ai governance framework eu act regulation sdaia"}, {"t": "Saudi Arabia Expands Home Ownership Drive with New Financing for Buyers Outside the Conventional Mortgage System", "u": "redf-alternative-finance.html", "c": "Economy \u00b7 Housing", "dd": "13 Jul 2026", "k": "redf housing home ownership financing mortgage vision 2030"}, {"t": "Ministry of Interior Warns Overstaying Residents Face Fines Up to SAR 50,000, Imprisonment and Deportation", "u": "interior-overstay.html", "c": "Policy \u00b7 Interior", "dd": "13 Jul 2026", "k": "interior ministry visa overstay fine deportation residents"}, {"t": "Diriyah Company Awards $490 Million Contract to Build Saudi Arabia Museum of Contemporary Art", "u": "diriyah-museum.html", "c": "Economy \u00b7 Culture", "dd": "13 Jun 2026", "k": "diriyah museum contemporary art samoca contract albawani culture"}];
+function render(list) {
+  var el = document.getElementById('results');
+  var count = document.getElementById('count');
+  if (!list.length) { el.innerHTML = '<p style="color:#6E6E73;font-size:.9rem">No results. Try a different term.</p>'; count.textContent=''; return; }
+  count.textContent = list.length + (list.length === 1 ? ' RESULT' : ' RESULTS');
+  el.innerHTML = list.map(function(a) {
+    return '<a href="' + a.u + '" style="display:block"><div class="search-result"><div><div class="sr-cat">' + a.c + '</div><div class="sr-title">' + a.t + '</div></div><div class="sr-date">' + a.dd + '</div></div></a>';
+  }).join('');
+}
+function run() {
+  var q = document.getElementById('q').value.toLowerCase().trim();
+  if (!q) { render(IDX); return; }
+  var terms = q.split(/\s+/);
+  var hits = IDX.filter(function(a) {
+    var hay = (a.t + ' ' + a.c + ' ' + a.k).toLowerCase();
+    return terms.every(function(t) { return hay.indexOf(t) !== -1; });
+  });
+  render(hits);
+}
+document.getElementById('q').addEventListener('input', run);
+document.getElementById('q').addEventListener('keydown', function(e) { if (e.key === 'Enter') run(); });
+render(IDX);
+</script>
+<footer class="site-footer"><div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">KingdomWire<span class="logo-dot">.</span></div><p class="footer-desc">Saudi Arabia, in depth, in English.</p></div>
+      <div class="footer-col"><div class="footer-col-title">Sections</div><a href="index.html">Latest</a><a href="policy.html">Policy</a><a href="economy.html">Economy</a><a href="society.html">Society</a><a href="on-the-record.html">On the Record</a><a href="analysis.html">Analysis</a><a href="archive.html">Archive</a></div>
+      <div class="footer-col"><div class="footer-col-title">Publication</div><a href="about.html">About</a><a href="mailto:info@kingdomwire.net">info@kingdomwire.net</a></div>
+      <div class="footer-col"><div class="footer-col-title">Follow</div><a href="https://x.com/KingdomWire" target="_blank" rel="noopener">X / Twitter</a></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-copy">2026 KINGDOMWIRE · KINGDOMWIRE.NET · ALL RIGHTS RESERVED</div></div>
+  </div></footer></body></html>

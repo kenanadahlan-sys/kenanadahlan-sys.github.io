@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>KingdomWire | Saudi Arabia In Depth In English</title>
+  <meta name="description" content="Independent English-language coverage of Saudi Arabia."/>
+  <meta property="og:title" content="KingdomWire | Saudi Arabia In Depth In English"/>
+  <meta property="og:description" content="Independent English-language coverage of Saudi Arabia."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://kingdomwire.net"/>
+  <meta property="og:site_name" content="KingdomWire"/>
+  <meta property="og:image" content="https://kingdomwire.net/og/default.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://kingdomwire.net/og/default.png"/>
+  <meta name="twitter:site" content="@KingdomWire"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://kingdomwire.net"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+/* ============================================
+   KINGDOMWIRE - GLOBAL STYLESHEET v2
+   White · Ink · Saudi Lavender #6B4E9B
+   ============================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:   #0B0B0D;
+  --ink:     #1A1A1C;
+  --dg:      #333336;
+  --mg:      #6E6E73;
+  --lg:      #A8A8AD;
+  --rule:    #E4E4E7;
+  --ow:      #F8F8F7;
+  --white:   #FFFFFF;
+  --accent:  #6B4E9B;
+  --accent2: #573D82;
+  --accent-soft: #F1EDF7;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+body { background: var(--white); color: var(--ink); font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; }
+::selection { background: var(--accent); color: var(--white); }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+.container-narrow { max-width: 760px; margin: 0 auto; padding: 0 28px; }
+
+/* ── TICKER ── */
+.ticker { background: var(--black); color: #9d9da3; font-family: 'JetBrains Mono', monospace; font-size: .66rem; letter-spacing: .05em; overflow: hidden; white-space: nowrap; display: flex; align-items: center; height: 34px; }
+.ticker-label { background: var(--accent); color: var(--white); font-weight: 700; padding: 0 16px; height: 100%; display: flex; align-items: center; flex-shrink: 0; letter-spacing: .14em; font-size: .6rem; text-transform: uppercase; }
+.ticker-track { display: inline-flex; animation: tick 70s linear infinite; padding-left: 40px; }
+.ticker-track span { padding-right: 72px; }
+.ticker-track span::before { content: '◆ '; color: var(--accent); font-size: .5rem; vertical-align: 1px; padding-right: 8px; }
+@keyframes tick { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* ── MASTHEAD ── */
+.masthead { background: var(--white); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--rule); box-shadow: 0 1px 0 var(--white), 0 4px 16px rgba(11,11,13,.05); }
+.masthead-inner { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+.masthead-top { position: relative; display: flex; align-items: center; justify-content: center; padding: 28px 0 22px; }
+.masthead-top::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; border-top: 1px solid var(--black); border-bottom: 1px solid var(--black); }
+.logo { text-align: center; }
+.logo-wordmark { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900; letter-spacing: -.015em; color: var(--black); line-height: 1; }
+.logo-wordmark a { color: inherit; }
+.logo-dot { color: var(--accent); }
+.logo-rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 10px; }
+.logo-rule-line { flex: 1; max-width: 76px; height: 1px; background: linear-gradient(to right, transparent, var(--accent)); }
+.logo-rule-line:last-child { background: linear-gradient(to left, transparent, var(--accent)); }
+.logo-tagline { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .3em; color: var(--mg); text-transform: uppercase; white-space: nowrap; }
+.masthead-right { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+/* ── NAV ── */
+.nav { overflow-x: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+.nav-inner { display: flex; align-items: center; width: max-content; margin: 0 auto; padding: 0 16px; }
+.nav-inner a { font-family: 'Inter', sans-serif; font-size: .68rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; color: var(--mg); padding: 14px 18px; white-space: nowrap; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; display: block; }
+.nav-inner a:hover { color: var(--black); }
+.nav-inner a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ── TAGS ── */
+.tag { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .1em; text-transform: uppercase; padding: 3px 9px; border: 1px solid var(--rule); color: var(--mg); background: var(--ow); }
+.tag-accent { background: var(--accent); color: var(--white); border-color: var(--accent); }
+.tag-breaking { background: #B71C1C; color: var(--white); border-color: #B71C1C; }
+
+/* ── SECTION HEAD ── */
+.section-head { display: flex; align-items: center; gap: 14px; padding: 30px 0 0; border-top: 2px solid var(--accent); margin-top: 48px; position: relative; }
+.section-head::before { content: ''; position: absolute; top: -2px; left: 0; width: 56px; height: 2px; background: var(--black); }
+.section-head-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--black); white-space: nowrap; }
+.section-head-title a { color: inherit; }
+.section-head-title a:hover { color: var(--accent); }
+.section-head-line { flex: 1; height: 1px; background: var(--rule); }
+.section-head-link { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.section-head-link:hover { color: var(--accent2); }
+
+.card-date { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--lg); margin-top: 12px; }
+
+/* ── INFOGRAPHIC ── */
+.infographic { border: 1px solid var(--rule); border-top: 2px solid var(--accent); background: var(--ow); padding: 18px; margin-top: 18px; }
+.infographic-title { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mg); margin-bottom: 12px; }
+.bar-chart { display: flex; flex-direction: column; gap: 7px; }
+.bar-row { display: flex; align-items: center; gap: 8px; }
+.bar-label { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--dg); width: 110px; flex-shrink: 0; text-align: right; line-height: 1.3; }
+.bar-track { flex: 1; height: 10px; background: var(--rule); }
+.bar-fill { height: 100%; background: var(--dg); }
+.bar-fill.accent { background: var(--accent); }
+.bar-value { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--dg); width: 54px; flex-shrink: 0; }
+.stat-row { display: flex; border-top: 1px solid var(--rule); padding-top: 12px; margin-top: 12px; }
+.stat-block { flex: 1; text-align: center; border-right: 1px solid var(--rule); padding: 0 8px; }
+.stat-block:last-child { border-right: none; }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--accent); line-height: 1; }
+.stat-label { font-family: 'JetBrains Mono', monospace; font-size: .5rem; color: var(--mg); letter-spacing: .06em; margin-top: 4px; text-transform: uppercase; }
+
+/* ── FOOTER ── */
+.site-footer { background: var(--black); color: var(--white); padding: 60px 0 30px; margin-top: 76px; border-top: 3px solid var(--accent); }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 44px; padding-bottom: 40px; border-bottom: 1px solid #17171a; }
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 900; color: var(--white); margin-bottom: 14px; }
+.footer-logo .logo-dot { color: var(--accent); }
+.footer-desc { font-size: .78rem; line-height: 1.75; color: #5c5c62; font-weight: 300; }
+.footer-col-title { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; color: #47474d; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #17171a; }
+.footer-col a { display: block; font-size: .8rem; color: #5c5c62; margin-bottom: 10px; transition: color .15s, padding-left .15s; }
+.footer-col a:hover { color: var(--white); padding-left: 4px; }
+.footer-bottom { padding-top: 24px; display: flex; align-items: center; justify-content: space-between; }
+.footer-copy { font-family: 'JetBrains Mono', monospace; font-size: .56rem; color: #3a3a40; letter-spacing: .08em; }
+
+/* ── ARTICLE PAGE ── */
+.article-header { padding: 44px 0 32px; border-bottom: 1px solid var(--rule); margin-bottom: 36px; }
+.article-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+.article-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; line-height: 1.16; color: var(--black); margin-bottom: 20px; }
+.article-deck { font-size: 1.08rem; line-height: 1.72; color: var(--dg); font-weight: 300; margin-bottom: 22px; border-left: 3px solid var(--accent); padding-left: 18px; }
+.article-meta { display: flex; align-items: center; gap: 14px; font-family: 'JetBrains Mono', monospace; font-size: .58rem; color: var(--lg); flex-wrap: wrap; }
+.article-body { font-size: 1rem; line-height: 1.88; color: var(--ink); }
+.article-body p { margin-bottom: 1.5em; }
+.article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700; color: var(--black); margin: 2em 0 .8em; padding-top: .6em; border-top: 1px solid var(--rule); }
+.article-body blockquote { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 18px 22px; margin: 2em 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.08rem; color: var(--dg); line-height: 1.65; }
+.article-source { font-family: 'JetBrains Mono', monospace; font-size: .6rem; color: var(--mg); margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); }
+
+/* ── SECTION PAGE ── */
+.section-page-header { padding: 40px 0 26px; border-bottom: 2px solid var(--accent); margin-bottom: 32px; position: relative; }
+.section-page-header::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 56px; height: 2px; background: var(--black); }
+.section-page-title { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: var(--black); }
+.section-page-desc { font-size: .9rem; color: var(--mg); margin-top: 8px; font-weight: 300; }
+
+/* ── ARTICLE LIST ── */
+.article-list { display: flex; flex-direction: column; }
+.article-list-item { display: grid; grid-template-columns: 1fr 120px; gap: 24px; align-items: start; padding: 26px 0; border-bottom: 1px solid var(--rule); transition: padding-left .18s; }
+.article-list-item:hover { padding-left: 8px; }
+.article-list-item:hover .ali-title { color: var(--accent); }
+.ali-cat { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.ali-title { font-family: 'Playfair Display', serif; font-size: 1.18rem; font-weight: 700; line-height: 1.3; color: var(--black); margin-bottom: 8px; transition: color .15s; }
+.ali-deck { font-size: .82rem; line-height: 1.65; color: var(--mg); font-weight: 300; }
+.ali-meta { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--lg); margin-top: 10px; }
+.ali-date { font-family: 'JetBrains Mono', monospace; font-size: .6rem; color: var(--lg); text-align: right; padding-top: 4px; white-space: nowrap; }
+
+/* ── ABOUT ── */
+.about-hero { padding: 60px 0; border-bottom: 1px solid var(--rule); }
+.about-title { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; line-height: 1.2; color: var(--black); margin-bottom: 22px; }
+.about-body { font-size: 1rem; line-height: 1.85; color: var(--dg); }
+.about-body p { margin-bottom: 1.4em; }
+.about-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.about-value { padding: 26px; border: 1px solid var(--rule); border-top: 2px solid var(--accent); }
+.about-value-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--black); margin-bottom: 10px; }
+.about-value-body { font-size: .82rem; line-height: 1.7; color: var(--mg); font-weight: 300; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .logo-wordmark { font-size: 2.4rem; }
+  .masthead-top { padding: 20px 0 16px; }
+  .masthead-right { position: static; transform: none; margin-top: 14px; }
+  .masthead-top { flex-direction: column; }
+  .about-values { grid-template-columns: 1fr; }
+  .article-list-item { grid-template-columns: 1fr; }
+  .ali-date { text-align: left; }
+  .article-title { font-size: 1.9rem; }
+}
+@media (max-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .logo-wordmark { font-size: 2rem; }
+  .container { padding: 0 18px; }
+  .article-title { font-size: 1.7rem; }
+  }
+    .lead-grid { display: grid; grid-template-columns: 1fr 320px; gap: 0; border-top: 2px solid var(--accent); padding-top: 32px; margin-top: 8px; position: relative; }
+    .lead-grid::before { content: ''; position: absolute; top: -2px; left: 0; width: 56px; height: 2px; background: var(--black); }
+    .lead-primary { padding-right: 32px; border-right: 1px solid var(--rule); }
+    .lead-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; color: var(--mg); margin-bottom: 12px; }
+    .lead-headline { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; line-height: 1.15; color: var(--black); margin-bottom: 14px; }
+    .lead-headline a { color: inherit; background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 96%; transition: background-size .3s ease, color .2s; }
+    .lead-headline a:hover { color: var(--accent); background-size: 100% 2px; }
+    .lead-deck { font-size: .98rem; line-height: 1.7; color: var(--dg); font-weight: 300; margin-bottom: 16px; border-left: 3px solid var(--accent); padding-left: 16px; }
+    .lead-footer { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .sidebar { padding-left: 28px; }
+    .sidebar-label { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .16em; text-transform: uppercase; color: var(--mg); padding-bottom: 14px; border-bottom: 1px solid var(--accent); }
+    .sidebar-item { padding: 16px 0; border-bottom: 1px solid var(--rule); transition: padding-left .18s; }
+    .sidebar-item:hover { padding-left: 6px; }
+    .sidebar-item:last-child { border-bottom: none; }
+    .sidebar-cat { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mg); margin-bottom: 6px; }
+    .sidebar-title { font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 600; line-height: 1.35; color: var(--black); margin-bottom: 5px; }
+    .sidebar-title a { color: inherit; }
+    .sidebar-title a:hover { color: var(--accent); }
+    .sidebar-deck { font-size: .76rem; line-height: 1.5; color: var(--mg); font-weight: 300; }
+    .three-col { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--rule); margin-top: 20px; }
+    .col-card { padding: 24px 24px 24px 0; border-right: 1px solid var(--rule); }
+    .col-card:last-child { border-right: none; padding-right: 0; }
+    .col-card:not(:first-child) { padding-left: 24px; }
+    .col-cat { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mg); margin-bottom: 8px; }
+    .col-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; line-height: 1.3; color: var(--black); margin-bottom: 8px; }
+    .col-title a { color: inherit; }
+    .col-title a:hover { color: var(--accent); }
+    .col-deck { font-size: .8rem; line-height: 1.65; color: var(--mg); font-weight: 300; }
+    .section-head { display: flex; align-items: center; gap: 14px; padding: 30px 0 0; border-top: 2px solid var(--accent); margin-top: 48px; position: relative; }
+    .section-head::before { content: ''; position: absolute; top: -2px; left: 0; width: 56px; height: 2px; background: var(--black); }
+    @media (max-width: 960px) {
+      .lead-grid { grid-template-columns: 1fr; }
+      .lead-primary { padding-right: 0; border-right: none; padding-bottom: 28px; border-bottom: 1px solid var(--rule); margin-bottom: 28px; }
+      .sidebar { padding-left: 0; }
+      .three-col { grid-template-columns: 1fr; }
+      .col-card { padding: 20px 0; border-right: none; border-bottom: 1px solid var(--rule); }
+      .col-card:not(:first-child) { padding-left: 0; }
+    }
+  
+    /* ── ON THE RECORD ── */
+    .otr { background: var(--black); color: var(--white); padding: 44px 0; margin: 48px 0 0; border-top: 3px solid var(--accent); }
+    .otr-header { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 20px; border-bottom: 1px solid #17171a; margin-bottom: 28px; }
+    .otr-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: .58rem; letter-spacing: .2em; text-transform: uppercase; color: var(--lg); margin-bottom: 4px; }
+    .otr-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; }
+    .otr-link { font-family: 'JetBrains Mono', monospace; font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--lg); }
+    .otr-link:hover { color: var(--white); }
+    .otr-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: #17171a; }
+    .otr-card { background: var(--black); padding: 26px; transition: background .15s, box-shadow .15s; }
+    .otr-card:hover { background: #0e0e10; box-shadow: inset 0 2px 0 var(--accent); }
+    .otr-who { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+    .otr-avatar { width: 38px; height: 38px; background: #17171a; border: 1px solid var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: .58rem; font-weight: 700; color: var(--accent); flex-shrink: 0; }
+    .otr-name { font-size: .78rem; font-weight: 600; color: var(--white); line-height: 1.3; }
+    .otr-role { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--mg); margin-top: 2px; }
+    .otr-quote { font-family: 'Playfair Display', serif; font-style: italic; font-size: .92rem; line-height: 1.55; color: #d2d2d6; margin-bottom: 12px; padding-left: 12px; border-left: 2px solid var(--accent); }
+    .otr-context { font-size: .75rem; line-height: 1.6; color: var(--mg); font-weight: 300; }
+    .otr-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid #121215; }
+    .otr-date { font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: #3a3a40; }
+    /* ── ANALYSIS GRID ── */
+    .analysis-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+    .analysis-card { background: var(--white); padding: 26px; transition: background .18s, box-shadow .18s; }
+    .analysis-card:hover { background: var(--ow); box-shadow: inset 0 2px 0 var(--accent); }
+    .analysis-card.featured { background: var(--ow); }
+    .analysis-cat { font-family: 'JetBrains Mono', monospace; font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .analysis-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; line-height: 1.25; color: var(--black); margin-bottom: 12px; }
+    .analysis-card.featured .analysis-title { font-size: 1.3rem; }
+    .analysis-title a { color: inherit; }
+    .analysis-title a:hover { color: var(--accent); }
+    .analysis-body { font-size: .82rem; line-height: 1.8; color: var(--dg); font-weight: 300; font-style: italic; }
+    .analysis-footer { margin-top: 16px; font-family: 'JetBrains Mono', monospace; font-size: .54rem; color: var(--lg); display: flex; align-items: center; justify-content: space-between; }
+    .analysis-footer a { color: var(--accent); }
+    @media (max-width: 960px) {
+      .otr-grid { grid-template-columns: 1fr; }
+      .analysis-grid { grid-template-columns: 1fr; }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-label">Today</div>
+  <div style="overflow:hidden;flex:1">
+    <div class="ticker-track">
+      <span>Houthis declare a naval blockade against Saudi Arabia in the Red Sea and Bab el-Mandeb</span>
+      <span>Foreign Minister discusses Gaza with the Palestinian Vice President</span>
+      <span>Riyadh Air expands fleet plan by 34 Boeing and Airbus aircraft</span>
+      <span>Saudi Arabia opens national parks to private investment</span>
+      <span>Early warning alerts issued for Al-Kharj and Yanbu, all-clear announced</span>
+      <span>Foreign investors direct 1.6 billion dollars into Saudi stocks in the second quarter</span>
+      <span>Houthis declare a naval blockade against Saudi Arabia in the Red Sea and Bab el-Mandeb</span>
+      <span>Foreign Minister discusses Gaza with the Palestinian Vice President</span>
+      <span>Riyadh Air expands fleet plan by 34 Boeing and Airbus aircraft</span>
+      <span>Saudi Arabia opens national parks to private investment</span>
+      <span>Early warning alerts issued for Al-Kharj and Yanbu, all-clear announced</span>
+      <span>Foreign investors direct 1.6 billion dollars into Saudi stocks in the second quarter</span>
+    </div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <div class="logo">
+        <div class="logo-wordmark"><a href="index.html">KingdomWire<span class="logo-dot">.</span></a></div>
+        <div class="logo-rule"><div class="logo-rule-line"></div><div class="logo-tagline">Saudi Arabia · In Depth · In English</div><div class="logo-rule-line"></div></div>
+      </div>
+    </div>
+    <nav class="nav"><div class="nav-inner"><a href="index.html" class="active">Latest</a><a href="policy.html">Policy</a><a href="economy.html">Economy</a><a href="society.html">Society</a><a href="on-the-record.html">On the Record</a><a href="analysis.html">Analysis</a><a href="archive.html">Archive</a><a href="about.html">About</a><a href="search.html">Search</a></div></nav>
+  </div>
+</header>
+
+<main>
+<div class="container" style="padding-top:32px">
+
+  <div class="lead-grid">
+    <div class="lead-primary">
+      <div class="lead-eyebrow">Policy · Maritime Security</div>
+      <h1 class="lead-headline"><a href="houthi-blockade.html">The Houthis Declare a Naval Blockade of Saudi Arabia. Capability Is the Open Question.</a></h1>
+      <p class="lead-deck">The announcement targets the Red Sea and Bab el-Mandeb, the corridor Saudi oil exports have depended on since Hormuz closed, days after sirens sounded in Yanbu. A declaration is not enforcement. Insurance premiums, routing decisions and freight rates respond to stated risk before proven risk, and that is where the announcement lands first.</p>
+      <div class="lead-footer">
+        <span class="tag tag-accent">Lead</span>
+        <span class="tag">Maritime</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--lg)">20 Jul 2026</span>
+        <a href="houthi-blockade.html" style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--accent)">Read full story</a>
+      </div>
+
+      <div class="infographic">
+        <div class="infographic-title">The Corridor in Question</div>
+        <div class="stat-row">
+          <div class="stat-block"><div class="stat-number">YANBU</div><div class="stat-label">Red Sea Export Exit</div></div>
+          <div class="stat-block"><div class="stat-number">B.M.</div><div class="stat-label">Bab el-Mandeb Strait</div></div>
+          <div class="stat-block"><div class="stat-number">7M</div><div class="stat-label">Pipeline Capacity B/D</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-label">Also Today</div>
+      <div class="sidebar-item">
+        <div class="sidebar-cat">Policy · Diplomacy</div>
+        <div class="sidebar-title"><a href="fm-gaza-talks.html">Foreign Minister Discusses Gaza with the Palestinian Vice President</a></div>
+        <div class="sidebar-deck">The humanitarian file stays on the active agenda in a week dominated by the Kingdom's own security news.</div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-cat">Economy · Aviation</div>
+        <div class="sidebar-title"><a href="riyadh-air-fleet.html">Riyadh Air Adds 34 Boeing and Airbus Aircraft to Its Fleet Plan</a></div>
+        <div class="sidebar-deck">Fleet orders are the hard commitment in aviation, and this one grows through a regional conflict.</div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-cat">Economy · Tourism</div>
+        <div class="sidebar-title"><a href="national-parks-investment.html">Saudi Arabia Opens National Parks to Private Investment</a></div>
+        <div class="sidebar-deck">The Red Sea model applied inland: the state sets the sites and standards, private operators build and run.</div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-cat">Analysis · Geopolitics</div>
+        <div class="sidebar-title"><a href="analysis-nuclear-file.html">Read the Royal Orders Next to the Nuclear File</a></div>
+        <div class="sidebar-deck">One capital waits on a signature. The other has organized its government as if the signature were inevitable.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <div class="section-head-title">More from This Week</div>
+    <div class="section-head-line"></div>
+    <a href="archive.html" class="section-head-link">Full archive</a>
+  </div>
+
+  <div class="three-col">
+    <div class="col-card">
+      <div class="col-cat">Economy · Real Estate</div>
+      <div class="col-title"><a href="real-estate-transactions.html">Saudi Real Estate Transactions Reach SR1.6 Trillion in Three Years</a></div>
+      <p class="col-deck">117,691 licensed brokers and 1.11 million recorded contracts since the Brokerage Law took effect. Formalization is the story under the headline number.</p>
+      <div class="card-date"><a href="real-estate-transactions.html" style="color:var(--accent)">Read</a> · 19 Jul 2026</div>
+    </div>
+    <div class="col-card">
+      <div class="col-cat">Economy · Housing</div>
+      <div class="col-title"><a href="homeownership-index.html">First National Homeownership Readiness Index Announced</a></div>
+      <p class="col-deck">A quarterly measure of how close citizens are to a first purchase, covering financing access and down-payment preparedness.</p>
+      <div class="card-date"><a href="homeownership-index.html" style="color:var(--accent)">Read</a> · 19 Jul 2026</div>
+    </div>
+    <div class="col-card">
+      <div class="col-cat">Society · Riyadh</div>
+      <div class="col-title"><a href="esports-world-cup.html">Saudi Clubs Defend Their Title as the Esports World Cup Runs in Riyadh</a></div>
+      <p class="col-deck">The trophy defense is this month's story. The industry the tournament is meant to seed is the longer one.</p>
+      <div class="card-date"><a href="esports-world-cup.html" style="color:var(--accent)">Read</a> · 18 Jul 2026</div>
+    </div>
+  </div>
+
+</div>
+
+<section class="otr" id="on-the-record">
+  <div class="container">
+    <div class="otr-header">
+      <div>
+        <div class="otr-eyebrow">Official Statements</div>
+        <div class="otr-title">On the Record</div>
+      </div>
+      <a href="on-the-record.html" class="otr-link">All statements</a>
+    </div>
+    <div class="otr-grid">
+      <div class="otr-card">
+        <div class="otr-who">
+          <div class="otr-avatar">NCEC</div>
+          <div><div class="otr-name">Fawaz Al-Mujathil</div><div class="otr-role">Director, National Center for Environmental Compliance, Riyadh</div></div>
+        </div>
+        <div class="otr-quote">"Construction work is not suspended. The focus is on achieving environmental compliance while allowing projects to continue."</div>
+        <div class="otr-context">On the logic behind 557 dust-control fines issued since February, following more than 3,000 site inspections across Riyadh.</div>
+        <div class="otr-footer"><span class="otr-date">16 Jul 2026 · Riyadh</span><a href="riyadh-dust-fines.html" style="font-family:'JetBrains Mono',monospace;font-size:.54rem;color:var(--accent)">Full context</a></div>
+      </div>
+      <div class="otr-card">
+        <div class="otr-who">
+          <div class="otr-avatar">DB</div>
+          <div><div class="otr-name">Jamal Al Kishi</div><div class="otr-role">CEO Middle East and Africa, Deutsche Bank</div></div>
+        </div>
+        <div class="otr-quote">"Saudi Arabia and the Middle East are a key growth market for Deutsche Bank. This license marks an important step toward realizing our strategic business expansion targets in the region."</div>
+        <div class="otr-context">On the bank's new regional headquarters license, its third legal entity in the Kingdom after two decades of presence.</div>
+        <div class="otr-footer"><span class="otr-date">8 Jul 2026 · Riyadh</span><a href="deutsche-bank-riyadh.html" style="font-family:'JetBrains Mono',monospace;font-size:.54rem;color:var(--accent)">Full context</a></div>
+      </div>
+      <div class="otr-card">
+        <div class="otr-who">
+          <div class="otr-avatar">PIF</div>
+          <div><div class="otr-name">Yasir Al-Rumayyan</div><div class="otr-role">Governor, Public Investment Fund</div></div>
+        </div>
+        <div class="otr-quote">"No projects in NEOM have been cancelled. The next phase will focus on delivering major projects with a reduced financial contribution from the Public Investment Fund."</div>
+        <div class="otr-context">On the 2026-2030 strategy, confirming Oxagon remains a core commitment and private partners take larger delivery roles.</div>
+        <div class="otr-footer"><span class="otr-date">15 Apr 2026</span><a href="pif-strategy-2026.html" style="font-family:'JetBrains Mono',monospace;font-size:.54rem;color:var(--accent)">Full context</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container" id="analysis">
+  <div class="section-head">
+    <div class="section-head-title"><a href="analysis.html">Analysis</a></div>
+    <div class="section-head-line"></div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--mg)">KingdomWire Analysis Desk</div>
+    <div class="section-head-line"></div>
+    <a href="analysis.html" class="section-head-link">All analysis</a>
+  </div>
+  <div class="analysis-grid">
+    <div class="analysis-card featured">
+      <div class="analysis-cat">Geopolitics · Energy</div>
+      <div class="analysis-title"><a href="analysis-nuclear-file.html">Read the Royal Orders Next to the Nuclear File</a></div>
+      <p class="analysis-body">Nations reveal intent through structure, not statements. A draft agreement permitting Saudi enrichment sits unsigned in Washington, constrained by a war fought over Iranian enrichment. Riyadh, meanwhile, has placed fuel, reactors and localization under one minister. One capital waits on a signature. The other has organized itself as if the signature were inevitable.</p>
+      <div class="analysis-footer"><span>19 Jul 2026 · 5 min</span><a href="analysis-nuclear-file.html">Read full analysis</a></div>
+    </div>
+    <div class="analysis-card">
+      <div class="analysis-cat">Banking · Strategy</div>
+      <div class="analysis-title"><a href="analysis-rhq-race.html">The Riyadh Headquarters Race Is About Who Blinks First</a></div>
+      <p class="analysis-body">Every additional headquarters changes the decision facing the firms that have not moved yet. Saudi Arabia never needed every multinational to relocate at once.</p>
+      <div class="analysis-footer"><span>16 Jul 2026 · 3 min</span><a href="analysis-rhq-race.html">Read full analysis</a></div>
+    </div>
+    <div class="analysis-card">
+      <div class="analysis-cat">Diplomacy · Geopolitics</div>
+      <div class="analysis-title"><a href="analysis-diplomacy-hub.html">The Geography of Influence Has Shifted Toward Riyadh</a></div>
+      <p class="analysis-body">Influence is measured by something less visible than summits and statements: who is willing to answer the phone when circumstances become difficult.</p>
+      <div class="analysis-footer"><span>15 Jul 2026 · 5 min</span><a href="analysis-diplomacy-hub.html">Read full analysis</a></div>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer"><div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">KingdomWire<span class="logo-dot">.</span></div><p class="footer-desc">Saudi Arabia, in depth, in English.</p></div>
+      <div class="footer-col"><div class="footer-col-title">Sections</div><a href="index.html">Latest</a><a href="policy.html">Policy</a><a href="economy.html">Economy</a><a href="society.html">Society</a><a href="on-the-record.html">On the Record</a><a href="analysis.html">Analysis</a><a href="archive.html">Archive</a></div>
+      <div class="footer-col"><div class="footer-col-title">Publication</div><a href="about.html">About</a><a href="mailto:info@kingdomwire.net">info@kingdomwire.net</a></div>
+      <div class="footer-col"><div class="footer-col-title">Follow</div><a href="https://x.com/KingdomWire" target="_blank" rel="noopener">X / Twitter</a></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-copy">2026 KINGDOMWIRE · KINGDOMWIRE.NET · ALL RIGHTS RESERVED</div></div>
+  </div></footer>
+</body>
+</html>
